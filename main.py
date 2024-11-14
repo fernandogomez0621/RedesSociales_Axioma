@@ -17,8 +17,9 @@ from visualizations.facebook_viz import show_facebook_metrics
 from visualizations.instagram_viz import show_instagram_metrics
 #from visualizations.youtube_viz import show_youtube_metrics
 #from visualizations.twitter_viz import show_twitter_metrics
-#from visualizations.linkedin_viz import show_linkedin_metrics
-
+from visualizations.linkedin_viz import *
+#from visualizations.linkedin_viz_2 import *
+#from visualizations.linkedin_viz_3 import *
 sys.path.append('.')
 
 def main():
