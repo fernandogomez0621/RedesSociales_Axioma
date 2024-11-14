@@ -18,8 +18,7 @@ from visualizations.instagram_viz import show_instagram_metrics
 #from visualizations.youtube_viz import show_youtube_metrics
 #from visualizations.twitter_viz import show_twitter_metrics
 from visualizations.linkedin_viz import *
-#from visualizations.linkedin_viz_2 import *
-#from visualizations.linkedin_viz_3 import *
+from visualizations.linkedin_viz_2 import *
 sys.path.append('.')
 
 def main():
@@ -37,7 +36,7 @@ def main():
     # Sidebar para selección de red social
     option = st.sidebar.selectbox(
         'Seleccione una Red Social',
-        ["Facebook", "Instagram", "YouTube", "X (Twitter)", "LinkedIn"]
+        ["Facebook", "Instagram", "YouTube", "X (Twitter)", "LinkedIn","LinkedIn II"]
     )
 
     # Mostrar el dashboard correspondiente
@@ -51,6 +50,8 @@ def main():
         show_twitter_metrics()
     elif option == "LinkedIn":
         show_linkedin_metrics()
+    elif option == "LinkedIn II":
+        show_linkedin_metrics_2()
 
     # Footer
     st.markdown("---")
